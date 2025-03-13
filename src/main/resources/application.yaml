@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: 23ai-docker-sb
+  threads:
+    virtual:
+      enabled: true
+
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/freepdb1
+    username: app_user
+    password: Welcome-12345
+    driver-class-name: oracle.jdbc.OracleDriver
+    type: oracle.ucp.jdbc.PoolDataSource
+    oracleucp:
+      connection-factory-class-name: oracle.jdbc.pool.OracleDataSource
+      connection-pool-name: ConnectionPool
+      # connection-wait-duration: 5
+      initial-pool-size: 1
+      min-pool-size: 1
+      max-pool-size: 5
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.OracleDialect
+        format_sql: true
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    dev:
+      atael: info
+
+
+
+
