@@ -7,7 +7,7 @@ services:
       - 1521:1521
     environment:
       - ORACLE_PASSWORD=Welcome-12345
-      # - APP_USER=app_user
-      # - APP_USER_PASSWORD=Welcome-12345
+      - APP_USER=app_user
+      - APP_USER_PASSWORD=Welcome-12345
     volumes:
       - ./sql-scripts:/container-entrypoint-startdb.d
