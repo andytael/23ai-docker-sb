@@ -14,7 +14,7 @@
 	<name>23ai-docker-sb</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>23</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -47,7 +47,7 @@
 			<dependency>
 			<groupId>com.oracle.database.spring</groupId>
 			<artifactId>oracle-spring-boot-starter-ucp</artifactId>
-			<version>24.4.0</version>
+			<version>25.1.0</version>
     	</dependency>
 	</dependencies>
 
