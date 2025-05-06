@@ -11,7 +11,7 @@ sqlplus -s app_user/Welcome-12345@//127.0.0.1/freepdb1 << EOF
   WHENEVER SQLERROR EXIT SQL.SQLCODE
 
   ALTER SESSION SET CONTAINER=FREEPDB1;
-  
+
   @/opt/oracle/db-sample-schemas-23.3/human_resources/hr_create.sql
   @/opt/oracle/db-sample-schemas-23.3/human_resources/hr_populate.sql
 

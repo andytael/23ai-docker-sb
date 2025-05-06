@@ -12,11 +12,9 @@ public class SimpleRESTEndpoint {
  
     private final RegionsRepository regionRepository;
 
-
     public SimpleRESTEndpoint(RegionsRepository regionRepository) {
         this.regionRepository = regionRepository;
     }
-
 
     @GetMapping("listregions")
     @ResponseStatus(HttpStatus.OK)

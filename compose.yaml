@@ -1,13 +1,13 @@
 name: 23ai-free
 services:
   oracle:
-    image: gvenzl/oracle-free:latest
+    image: gvenzl/oracle-free:23.7-slim-faststart
     hostname: oracle-free
     ports:
       - 1521:1521
     environment:
       - ORACLE_PASSWORD=Welcome-12345
-      # - APP_USER=app_user
-      # - APP_USER_PASSWORD=Welcome-12345
+      - APP_USER=APP_USER
+      - APP_USER_PASSWORD=Welcome-12345
     volumes:
       - ./sql-scripts:/container-entrypoint-startdb.d
