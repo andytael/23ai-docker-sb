@@ -1,5 +1,3 @@
 # Spring Boot and an Oracle Database 23ai Free Docker container.
 
-1. Run with `mvn clean spring-boot:run`
-1. Login with `sql app_user/Welcome-12345@//localhost:1521/freepdb1` and `select * from regions;`. Data is there.
-1. Test endpoint with `curl http://localhost:8080/listregions`
+See the following blogpost: https://medium.com/@andytael/spring-boot-and-an-oracle-database-23ai-free-docker-container-2df192f0e650
